@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .user-component,
@@ -23,7 +24,7 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 17px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--sub-text);
 }
 
 .user-component__avartar--xl {
@@ -42,5 +43,40 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--sub-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-component__column-menu {
+  opacity: 0.5;
+}
+
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.user-component__text-span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-component__alret {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -25px;
+  bottom: 0px;
+  border: 1px solid red;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  padding: 3px;
+  color: red;
+  font-size: 14px;
 }
