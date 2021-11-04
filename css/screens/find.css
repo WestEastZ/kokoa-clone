@@ -102,3 +102,23 @@
   padding-top: 25px;
   border-top: var(--main-border);
 }
+
+@keyframes heratBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: var(--violet);
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heratBeat 1s linear infinite;
+}
